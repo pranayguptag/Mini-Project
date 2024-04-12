@@ -1,0 +1,8 @@
+.container body-container{
+    width: 59%;
+    min-height: 400%;
+}
+.form_elements{
+    padding-left: 40px;
+    padding-bottom: 40px;
+}

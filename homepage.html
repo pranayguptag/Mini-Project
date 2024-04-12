@@ -12,6 +12,7 @@
 <link rel="shortlink" href="/node/88824" />
 <!-- <link rel="shortcut icon" href="https://ppqs.gov.in/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" /> -->
   <title>Kisan Seva | An initiative By NIETAN'S</title>
+
 	
 	
 	<meta name="keywords" content="Kisan Suvidha, Ppqs,plant protection,pesticides india, ministry of agriculture,farmer potal, ministry of agriculture and farmers welfare">
@@ -26,6 +27,7 @@
 <link type="text/css" rel="stylesheet" href="https://ppqs.gov.in/sites/default/files/css/css_ye3Rt2GWXEzawP8drC3AQ-Ud2vhmPxbl2-53-Xxd4eU.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://ppqs.gov.in/sites/default/files/css/css_jaePnWnlYbIe2AbrZ87VSEY55Ep4ZgbIbINPyYfzW-k.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://ppqs.gov.in/sites/default/files/css/css_aGPW_zlO0Za5XqDFb_ze4OSARNf7EgY3oo0_1qGUYIA.css" media="all" />
+<link rel="stylesheet" href="D:\GITHUB\Hack-X\index.css">
   <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
 <script>window.jQuery || document.write("<script src='/sites/all/modules/contributed/jquery_update/replace/jquery/1.12/jquery.min.js'>\x3C/script>")</script>
 <script>jQuery.migrateMute=true;jQuery.migrateTrace=false;</script>
@@ -255,25 +257,65 @@
     <div id="block-easy-breadcrumb-easy-breadcrumb" class="block block-easy-breadcrumb first last odd">
 
       
-    <div itemscope class="easy-breadcrumb" itemtype="http://data-vocabulary.org/Breadcrumb">
+    <!-- <div itemscope class="easy-breadcrumb" itemtype="http://data-vocabulary.org/Breadcrumb">
           <span itemprop="title"><a href="/" class="easy-breadcrumb_segment easy-breadcrumb_segment-front">Home</a></span>               <span class="easy-breadcrumb_segment-separator">&gt;&gt;</span>
-                <span class="easy-breadcrumb_segment easy-breadcrumb_segment-title" itemprop="title">Kisan Suvidha</span>            </div>
+                <span class="easy-breadcrumb_segment easy-breadcrumb_segment-title" itemprop="title">Kisan Suvidha</span>            </div> -->
 
 </div>
   </div>
 </div>
               </div>
   </section>
+  <div style="background-color: antiquewhite;" style="border: 10px;" style="margin: 10px;">
+    <form>
+      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <label for="phosphorus" class="label">Phosphorus:          <span id="phosphorusValue">50</span></label>
+        <input type="range" id="phosphorus" name="phosphorus" class="range-input" min="0" max="100" value="50" onchange="updateValue('phosphorus', this.value)">
+      </div>
+      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <label for="nitrogen" class="label">Nitrogen: <span id="nitrogenValue">50</span></label>
+        <input type="range" id="nitrogen" name="nitrogen" class="range-input" min="0" max="100" value="50" onchange="updateValue('nitrogen', this.value)">
+      </div>
+      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <label for="potassium" class="label">Potassium: <span id="potassiumValue">50</span></label>
+        <input type="range" id="potassium" name="potassium" class="range-input" min="0" max="100" value="50" onchange="updateValue('potassium', this.value)">
+      </div>
+      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <label for="rainfall" class="label">Annual rainfall:<span id="rainfallValue">50.0</span></label>
+        <input type="range" id="rainfall" name="rainfall" class="range-input" min="0.000" max="300.000" value="50.0" step="0.11" onchange="updateValue('rainfall', this.value)">
+      </div>
+      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <label for="ph" class="label">pH value:<span id="phValue">50</span></label>
+        <input type="range" id="ph" name="ph" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('ph', this.value)">
+      </div>
+      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <label for="humidity" class="label">Humidity: <span id="humidityValue">50</span></label>
+        <input type="range" id="humidity" name="humidity" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('humidity', this.value)">
+      </div>
+      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <label for="temperature" class="label">Temperature:<span id="temperatureValue">50</span></label>
+        <input type="range" id="temperature" name="temperature" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('temperature', this.value)">
+      </div>
+
+
+    </form>
+  </div>
   
-  <div id="skipCont" class="wrapper"></div>
+  <script>
+    function updateValue(elementId, newValue) {
+      document.getElementById(elementId + "Value").innerText = newValue;
+    }
+  </script>
+  
+  <!-- <div id="skipCont" class="wrapper"></div>
   <section class="wrapper body-wrapper " id="fontSize" role="main">
     <div class="bg-wrapper inner-body-wrapper">
-      <div class="container body-container">
+      <div class="container body-container" style="width: 59%; min-height: 400% " style="background-color: black;">
           
                   		          <div id="content" class="ppqs-full-content" role="main">      
             <a id="main-content"></a>
                                       <h1 class="heading" tabindex="0">Kisan Suvidha</h1>
-                        <div tabindex="0">
+                        <div tabindex="0"> -->
                                     
                                     
                                     
