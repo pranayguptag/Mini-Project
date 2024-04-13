@@ -46,6 +46,39 @@
 <!-- code for popup given by department start by atul -->
 <!-- code for popup given by department end by atul -->
 <!--script type="text/javascript" src="https://www.mygov.in/overlay/overlay.js"></script-->
+<style>
+  .{
+    background-color: coral;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
 </head>
 <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-88824 node-type-page i18n-en section-kisan-suvidha page-panels" >
 
@@ -170,17 +203,17 @@
 <li class="abhishekProfile link"><a href="https://www.linkedin.com/in/abhishek-kumar-9a1a041a8/">Abhishek</a></li>
 </ul></li>
 </ul></li>
-<li class="menu__item is-expanded expanded menu-mlid-2655"><a href="/divisions" title="Divisions" class="menu__link hrefnone">Divisions</a><ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-2857"><a href="/divisions/integrated-pest-management" title="Integrated Pest Management" class="menu__link hrefnone">Integrated Pest Management</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-2862"><a href="/divisions/integrated-pest-management/overview-and-activities" title="Introduction" class="menu__link">Overview and Activities</a></li>
+ <li class="menu__item is-expanded expanded menu-mlid-2655"><a href="/divisions" title="Divisions" class="menu__link hrefnone">Divisions</a><ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-2857"><a href="/divisions/integrated-pest-management" title="Integrated Pest Management" class="menu__link hrefnone">Integrated Pest Management</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-2862"><a href="/divisions/integrated-pest-management/overview-and-activities" title="Introduction" class="menu__link">Overview and Activities</a></li> --> -->
 <li class="menu__item is-leaf leaf menu-mlid-2863"><a href="/divisions/integrated-pest-management/organizational-set" title="Activities" class="menu__link">Organizational Set up</a></li>
 <li class="menu__item is-leaf leaf menu-mlid-2864"><a href="/divisions/integrated-pest-management/ipm-glance" title="IPM at Glance" class="menu__link">IPM at Glance</a></li>
 <li class="menu__item is-leaf leaf menu-mlid-2865"><a href="/divisions/integrated-pest-management/components-ipm" title="Components of IPM" class="menu__link">Components of IPM</a></li>
-<li class="menu__item is-leaf leaf menu-mlid-2866"><a href="/divisions/integrated-pest-management/successful-bio-control-programmes" title="Bio Control Programmes" class="menu__link">Successful Bio Control Programmes</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2866"><a href="/divisions/integrated-pest-management/successful-bio-control-programmes" title="Bio Control Programmes" class="menu__link">Successful Bio Control Programmes</a></li> -->
 <li class="menu__item is-leaf leaf menu-mlid-4284"><a href="/divisions/integrated-pest-management/major-incidence-pests-0" class="menu__link">Major incidence of Pests</a></li>
 <li class="menu__item is-leaf leaf menu-mlid-2868"><a href="/divisions/integrated-pest-management/bio-control-labs" title="Bio Control Labs" class="menu__link">Bio Control Labs</a></li>
 <li class="menu__item is-leaf leaf menu-mlid-2869"><a href="/divisions/integrated-pest-management/instruction-safe-use-pesticide" title="Instruction for Safe Use of Pesticide" class="menu__link">Instruction for Safe Use of Pesticide</a></li>
 <li class="menu__item is-leaf leaf menu-mlid-3551"><a href="/divisions/integrated-pest-management/ipm-training-activities-photographs" class="menu__link">IPM Training Activities Photographs</a></li>
 <li class="menu__item is-leaf last leaf menu-mlid-3953"><a href="/divisions/integrated-pest-management/physical-achievements" class="menu__link">Physical Achievement</a></li>
-</ul></li>
+</ul></li> --> -->
 <li class="menu__item is-expanded expanded menu-mlid-2858"><a href="/divisions/plant-quarantine" title="Plant Quarantine" class="menu__link hrefnone">Plant Quarantine</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-2870"><a href="/divisions/plant-quarantine/strengthening-modernisation-plant-quarantine-facilities-india" title="Strengthening &amp; Modernisation of Plant Quarantine" class="menu__link">Strengthening &amp; Modernisation of Plant Quarantine</a></li>
 <li class="menu__item is-leaf leaf menu-mlid-2871"><a href="/divisions/plant-quarantine/objectives" title="Objective" class="menu__link">Objective</a></li>
 <li class="menu__item is-leaf leaf menu-mlid-2872"><a href="/divisions/plant-quarantine/present-setup" title="Present Setup" class="menu__link">Present Setup</a></li>
@@ -284,40 +317,40 @@
       <a href=""><img src="D:\Github\Hack-X\govt_schems.png" alt="Clickable image"></a>
     </div> 
   </div> -->
-  <div class="form_and_weidgts" style="display: flex;">
+  <div class="form_and_weidgts" style="display: flex; margin-bottom: 481px;">
     
     <div  class="Forms" >
-      <form  style=" background-color: grey; width:300px  ; height: 250px; position: sticky; border-style: solid;">
+      <form action="/predict" method="post" onsubmit="displayResult() "style=" background-color: grey; width:300px  ; height: 582px; position: sticky; border-style: solid; ">
         <div><p style="color: orange;">fill the below asked parameters to know which crop you should grow </p></div>
-        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <div class="form_elements" style="padding: 10px 10px 10px 10px;">
           <label for="phosphorus" class="label"> Phosphorus:          <span id="phosphorusValue">50</span></label>
           <input type="range" id="phosphorus" name="phosphorus" class="range-input" min="0" max="100" value="50" onchange="updateValue('phosphorus', this.value)">
         </div>
-        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <div class="form_elements" style="padding:10px 10px 10px 10px;">
           <label for="nitrogen" class="label">Nitrogen: <span id="nitrogenValue">50</span></label>
           <input type="range" id="nitrogen" name="nitrogen" class="range-input" min="0" max="100" value="50" onchange="updateValue('nitrogen', this.value)">
         </div>
-        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <div class="form_elements" style="padding:10px 10px 10px 10px;">
           <label for="potassium" class="label">Potassium: <span id="potassiumValue">50</span></label>
           <input type="range" id="potassium" name="potassium" class="range-input" min="0" max="100" value="50" onchange="updateValue('potassium', this.value)">
         </div>
-        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <div class="form_elements" style="padding:10px 10px 10px 10px;">
           <label for="rainfall" class="label">Annual rainfall:<span id="rainfallValue">50.0</span></label>
           <input type="range" id="rainfall" name="rainfall" class="range-input" min="0.000" max="300.000" value="50.0" step="0.11" onchange="updateValue('rainfall', this.value)">
         </div>
-        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <div class="form_elements" style="padding:10px 10px 10px 10px;">
           <label for="ph" class="label">pH value:<span id="phValue">50</span></label>
           <input type="range" id="ph" name="ph" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('ph', this.value)">
         </div>
-        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <div class="form_elements" style="padding:10px 10px 10px 10px;">
           <label for="humidity" class="label">Humidity: <span id="humidityValue">50</span></label>
           <input type="range" id="humidity" name="humidity" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('humidity', this.value)">
         </div>
-        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+        <div class="form_elements" style="padding:10px 10px 10px 10px;">
           <label for="temperature" class="label">Temperature:<span id="temperatureValue">50</span></label>
           <input type="range" id="temperature" name="temperature" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('temperature', this.value)">
         </div>
-        <div class="submit" style="padding: 5px 5px 5px 5px; ">
+        <div class="submit" style="padding:10px 10px 10px 10px;">
           <input type="submit" value="Submit" style="color: black;border-radius: 5px ; background-color:  darkolivegreen;">
         </div>
       </form>
@@ -328,10 +361,17 @@
         document.getElementById(elementId + "Value").innerText = newValue;
       }
     </script>
-  <div class="widgets_second_line" style="display:flex;">
+<div style="width: 100%; margin-right: 10px;  padding-left: 50px;"  >    
+  <div class="widgets_second_line" style="display:flex; width: 100%;  padding-right: 75px;" >
+    <div>
     <a href="#"><img src="crop_medical.png" alt="Clickable img" style="height: 200px;"></a>
+  </div>
+  <div>
     <a href="#"><img src="govt_schems.png" alt="Clickable img" style="height: 200px;"></a>
-    <a href="#"><img src="seeds_buy.png" alt="Clickable img" style="height: 200px;"></a>
+  </div>
+  <div>
+    <a href="#"><img src="seeds_buy.png" alt="Clickable img" style="height: 200px; ;"></a>
+  </div>
   </div>
   <div class="widgets" style="display: flex;" id="widgets_btn">
     <a href="#"><img src="agri_loan.png" alt="Clickable img" style="height: 200px;"></a>
@@ -346,6 +386,49 @@
       document.getElementById(elementId + "Value").innerText = newValue;
     }
   </script>
+  <div style=" margin-bottom: 481px;">
+  <form id="cropForm"  >
+    <div class="form-group">
+      <label for="sellerName">Seller Name:</label>
+      <input type="text" id="sellerName" name="sellerName" required>
+    </div>
+    <div class="form-group">
+      <label for="commodity">Commodity:</label>
+      <input type="text" id="commodity" name="commodity" required>
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required>
+    </div>
+    <div class="form-group">
+      <label for="contactNumber">Contact Number:</label>
+      <input type="number" id="contactNumber" name="contactNumber" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+<div>
+  <div style="margin-left: 100;"></div>
+<form id="buyerForm" style="background-color: aquamarine;">
+  <div class="form-group">
+    <label for="buyerName">Buyer Name:</label>
+    <input type="text" id="buyerName" name="buyerName" required>
+  </div>
+  <div class="form-group">
+    <label for="desiredCommodity">Desired Commodity:</label>
+    <input type="text" id="desiredCommodity" name="desiredCommodity" required>
+  </div>
+  <div class="form-group">
+    <label for="desiredQuantity">Desired Quantity:</label>
+    <input type="number" id="desiredQuantity" name="desiredQuantity" required>
+  </div>
+  <div class="form-group">
+    <label for="buyerContact">Contact Number:</label>
+    <input type="text" id="buyerContact" name="buyerContact" required>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+</div>
   
   <!-- <div id="skipCont" class="wrapper"></div>
   <section class="wrapper body-wrapper " id="fontSize" role="main">
@@ -360,10 +443,10 @@
                                     
                                     
 
-
+<!-- 
 <div class="panel-display panel-1col clearfix" >
   <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-views pane-page" >
+    <div><div class="panel-pane pane-views pane-page" > -->
   
       
   
@@ -415,8 +498,8 @@
        <footer id="footer" class="region region-footer">
     <div id="block-counter-counter" class="block block-counter first odd">
 
-      
-  <div  id="counter"><ul><li>Visitor:<strong>7,967,748</strong></li></ul></div>
+<!--       
+  <div  id="counter"><ul><li>Visitor:<strong>7,967,748</strong></li></ul></div> -->
  </div>
 <div id="block-cmf-content-footer-region-block" class="block block-cmf-content even"> -->
 
