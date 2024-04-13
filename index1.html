@@ -276,49 +276,69 @@
 
 
   </div>
-  <div>
+  <!-- <div>
     <div> 
       <img src=D:\Github\Hack-X\agri_loan.png>
     </div>
     <div>
       <a href=""><img src="D:\Github\Hack-X\govt_schems.png" alt="Clickable image"></a>
     </div> 
+  </div> -->
+  <div class="form_and_weidgts" style="display: flex;">
+    <div  class="Forms" >
+      <form  style=" background-color: grey; width:300px  ; height: 250px; position: sticky; border-style: solid;">
+        <div><p style="color: orange;">fill the below asked parameters to know which crop you should grow </p></div>
+        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+          <label for="phosphorus" class="label"> Phosphorus:          <span id="phosphorusValue">50</span></label>
+          <input type="range" id="phosphorus" name="phosphorus" class="range-input" min="0" max="100" value="50" onchange="updateValue('phosphorus', this.value)">
+        </div>
+        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+          <label for="nitrogen" class="label">Nitrogen: <span id="nitrogenValue">50</span></label>
+          <input type="range" id="nitrogen" name="nitrogen" class="range-input" min="0" max="100" value="50" onchange="updateValue('nitrogen', this.value)">
+        </div>
+        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+          <label for="potassium" class="label">Potassium: <span id="potassiumValue">50</span></label>
+          <input type="range" id="potassium" name="potassium" class="range-input" min="0" max="100" value="50" onchange="updateValue('potassium', this.value)">
+        </div>
+        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+          <label for="rainfall" class="label">Annual rainfall:<span id="rainfallValue">50.0</span></label>
+          <input type="range" id="rainfall" name="rainfall" class="range-input" min="0.000" max="300.000" value="50.0" step="0.11" onchange="updateValue('rainfall', this.value)">
+        </div>
+        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+          <label for="ph" class="label">pH value:<span id="phValue">50</span></label>
+          <input type="range" id="ph" name="ph" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('ph', this.value)">
+        </div>
+        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+          <label for="humidity" class="label">Humidity: <span id="humidityValue">50</span></label>
+          <input type="range" id="humidity" name="humidity" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('humidity', this.value)">
+        </div>
+        <div class="form_elements" style="padding: 5px 5px 5px 5px;">
+          <label for="temperature" class="label">Temperature:<span id="temperatureValue">50</span></label>
+          <input type="range" id="temperature" name="temperature" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('temperature', this.value)">
+        </div>
+        <div class="submit" style="padding: 5px 5px 5px 5px; ">
+          <input type="submit" value="Submit" style="color: black;border-radius: 5px ; background-color:  darkolivegreen;">
+        </div>
+      </form>
+    </div>
+   
+    <script>
+      function updateValue(elementId, newValue) {
+        document.getElementById(elementId + "Value").innerText = newValue;
+      }
+    </script>
+  <div class="widgets_second_line" style="display:flex;">
+    <a href="#"><img src="crop_medical.png" alt="Clickable img" style="height: 200px;"></a>
+    <a href="#"><img src="govt_schems.png" alt="Clickable img" style="height: 200px;"></a>
+    <a href="#"><img src="seeds_buy.png" alt="Clickable img" style="height: 200px;"></a>
   </div>
-  <div  class="Forms" >
-    <form  style=" background-color: darkolivegreen; width:300px  ; height: 220px; position: relative;">
-      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
-        <label for="phosphorus" class="label">Phosphorus:          <span id="phosphorusValue">50</span></label>
-        <input type="range" id="phosphorus" name="phosphorus" class="range-input" min="0" max="100" value="50" onchange="updateValue('phosphorus', this.value)">
-      </div>
-      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
-        <label for="nitrogen" class="label">Nitrogen: <span id="nitrogenValue">50</span></label>
-        <input type="range" id="nitrogen" name="nitrogen" class="range-input" min="0" max="100" value="50" onchange="updateValue('nitrogen', this.value)">
-      </div>
-      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
-        <label for="potassium" class="label">Potassium: <span id="potassiumValue">50</span></label>
-        <input type="range" id="potassium" name="potassium" class="range-input" min="0" max="100" value="50" onchange="updateValue('potassium', this.value)">
-      </div>
-      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
-        <label for="rainfall" class="label">Annual rainfall:<span id="rainfallValue">50.0</span></label>
-        <input type="range" id="rainfall" name="rainfall" class="range-input" min="0.000" max="300.000" value="50.0" step="0.11" onchange="updateValue('rainfall', this.value)">
-      </div>
-      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
-        <label for="ph" class="label">pH value:<span id="phValue">50</span></label>
-        <input type="range" id="ph" name="ph" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('ph', this.value)">
-      </div>
-      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
-        <label for="humidity" class="label">Humidity: <span id="humidityValue">50</span></label>
-        <input type="range" id="humidity" name="humidity" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('humidity', this.value)">
-      </div>
-      <div class="form_elements" style="padding: 5px 5px 5px 5px;">
-        <label for="temperature" class="label">Temperature:<span id="temperatureValue">50</span></label>
-        <input type="range" id="temperature" name="temperature" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('temperature', this.value)">
-      </div>
-      <div class="submit" style="padding: 5px 5px 5px 5px; ">
-        <input type="submit" value="Submit" style="color: black; border: none; background-color:  darkolivegreen;">
-      </div>
-    </form>
+  <div class="widgets" style="display: flex;" id="widgets_btn">
+    <a href="#"><img src="agri_loan.png" alt="Clickable img" style="height: 200px;"></a>
+    <a href="#"><img src="crop_insurance.png" alt="Clickable img" style="height: 200px;"></a>
+    <a href="#"><img src="crop_selling.png" alt="Clickable img" style="height: 200px;"></a>
   </div>
+</div>
+  
  
   <script>
     function updateValue(elementId, newValue) {
