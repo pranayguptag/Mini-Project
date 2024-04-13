@@ -43,6 +43,33 @@
     <script type="text/javascript">
         var fontSize = "100";
   </script>
+
+<!-- javascript code for using python file -->
+<script>
+  function validateForm() {
+    // Check if all fields are filled
+    const inputs = document.querySelectorAll("input[required]");
+    for (const input of inputs) {
+      if (input.value.trim() === "") {
+        alert("Please fill out all fields!");
+        return false;
+      }
+    }
+
+    // You can add more specific validation here, e.g., for numeric values
+    const numberInputs = ["nitrogen", "phosphorus", "potassium", "temperature", "humidity", "ph", "rainfall"];
+    for (const name of numberInputs) {
+      const value = parseFloat(document.getElementById(name).value);
+      if (isNaN(value)) {
+        alert("Please enter valid numbers for " + name);
+        return false;
+      }
+    }
+
+    return true;
+  }
+</script>
+
 <!-- code for popup given by department start by atul -->
 <!-- code for popup given by department end by atul -->
 <!--script type="text/javascript" src="https://www.mygov.in/overlay/overlay.js"></script-->
@@ -353,6 +380,9 @@
         <div class="submit" style="padding:10px 10px 10px 10px;">
           <input type="submit" value="Submit" style="color: black;border-radius: 5px ; background-color:  darkolivegreen;">
         </div>
+        {% if prediction %}
+        <p>Predicted Crop: {{ prediction }}</p>
+      {% endif %}
       </form>
     </div>
    

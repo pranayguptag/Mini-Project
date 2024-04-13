@@ -119,16 +119,22 @@ model.append('RF')
 # Cross validation score (Random Forest)
 score = cross_val_score(RF,features,target,cv=5)
 
-# user input from html form
+
+"""# user input from html form
 N = 89
 P = 63
 K = 78
-temp = 50.0
+temperature = 50.0
 humidity = 10.0
 ph = 7.0
-rainfall = 10.00
+rainfall = 10.00"""
 
+def predict_crop(N, P, K, temperature, humidity, ph, rainfall):
+    data = np.array([[N, P, K, temperature,humidity, ph, rainfall]])
+    prediction = RF.predict(data)
+    return str(prediction)
+  # Convert the NumPy array to a list for JSON serialization
+    #prediction_list = data.tolist()
+    # Return the first element of the list as the prediction (adjust indexing if needed)
+    #return prediction_list[0]
 
-data = np.array([[N, P, K, temp,humidity, ph, rainfall]])
-prediction = RF.predict(data)
-print(prediction)
