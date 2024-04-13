@@ -74,9 +74,6 @@
 <!-- code for popup given by department end by atul -->
 <!--script type="text/javascript" src="https://www.mygov.in/overlay/overlay.js"></script-->
 <style>
-  .{
-    background-color: coral;
-  }
   .form-group {
     margin-bottom: 15px;
   }
@@ -105,10 +102,20 @@
   button:hover {
     background-color: #45a049;
   }
+
+  .prediction-box {
+    background-color: #4CAF50; /* Green background */
+    border-style: double;
+    border-color: #3e8e41; /* Darker green for border */
+    padding: 15px; /* Add some padding for better spacing */
+    border-radius: 5px; /* Rounded corners for a smoother look */
+    text-align: center; /* Center the text content */
+    font-weight: bold; /* Make the prediction text stand out */
+  }
 </style>
 </head>
-<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-88824 node-type-page i18n-en section-kisan-suvidha page-panels" >
-
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-88824 node-type-page i18n-en section-kisan-suvidha page-panels"  >
+<div style="background-image: url(/Users/mayankpant/Documents/Code/GitHub/Projects/Hack-X/static/web_background.png);">
 <!-- code for popup given by department start by atul -->
 <!-- code for popup given by department end by atul -->
 
@@ -162,7 +169,7 @@
 <input type="hidden" name="form_id" value="search_block_form" />
 </div>
 </div></form></div>
-					</li> <li class="ico-sitemap"><a href="https://ppqs.gov.in/site-map" title="Sitemap"><img src="https://ppqs.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-sitemap.png" alt="Sitemap" /></a></li> <li class="hindi"><a target="_blank" href="https://ppqs.gov.in/hi/किसान-सुविधा" class="alink">हिन्दी</a></li>
+					</li> <li class="ico-sitemap"><a href="https://ppqs.gov.in/site-map" title="Sitemap"><img src="https://ppqs.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-sitemap.png" alt="Sitemap" /></a></li> <li class="hindi"><a target="_blank" href="#" class="alink">हिन्दी</a></li>
             </ul>
         </div>
     </div>
@@ -344,7 +351,7 @@
       <a href=""><img src="D:\Github\Hack-X\govt_schems.png" alt="Clickable image"></a>
     </div> 
   </div> -->
-  <div class="form_and_weidgts" style="display: flex; margin-bottom: 481px;">
+  <div class="form_and_weidgts" style="display: flex; margin-bottom: 481px; background-image: url(/static/web_background.png);">
     
     <div  class="Forms" >
       <form action="/predict" method="post" onsubmit="displayResult() "style=" background-color: grey; width:300px  ; height: 582px; position: sticky; border-style: solid; ">
@@ -366,8 +373,8 @@
           <input type="range" id="rainfall" name="rainfall" class="range-input" min="0.000" max="300.000" value="50.0" step="0.11" onchange="updateValue('rainfall', this.value)">
         </div>
         <div class="form_elements" style="padding:10px 10px 10px 10px;">
-          <label for="ph" class="label">pH value:<span id="phValue">50</span></label>
-          <input type="range" id="ph" name="ph" class="range-input" min="0" max="100" value="50.0" step="0.11" onchange="updateValue('ph', this.value)">
+          <label for="ph" class="label">pH value:<span id="phValue">7</span></label>
+          <input type="range" id="ph" name="ph" class="range-input" min="-14.00" max="14.00" value="7.00" step="0.11" onchange="updateValue('ph', this.value)">
         </div>
         <div class="form_elements" style="padding:10px 10px 10px 10px;">
           <label for="humidity" class="label">Humidity: <span id="humidityValue">50</span></label>
@@ -380,9 +387,11 @@
         <div class="submit" style="padding:10px 10px 10px 10px;">
           <input type="submit" value="Submit" style="color: black;border-radius: 5px ; background-color:  darkolivegreen;">
         </div>
+        <div class="prediction-box">
         {% if prediction %}
         <p>Predicted Crop: {{ prediction }}</p>
       {% endif %}
+      </div>
       </form>
     </div>
    
@@ -391,22 +400,28 @@
         document.getElementById(elementId + "Value").innerText = newValue;
       }
     </script>
-<div style="width: 100%; margin-right: 10px;  padding-left: 50px;"  >    
+<div class="widgetDiv" style="margin-left: 90px;"  >    
   <div class="widgets_second_line" style="display:flex; width: 100%;  padding-right: 75px;" >
-    <div>
-    <a href="#"><img src="/static/crop_medical.png" alt="Clickable img" style="height: 200px;"></a>
+    <div  style="padding: 50px 50px 50px 50px;">
+    <a href="https://krushidukan.bharatagri.com/pages/bharatagri-video-call-service-page" target="_blank"><img src="/static/crop_medical.png" alt="Clickable img" style="height: 200px;"></a>
   </div>
-  <div>
-    <a href="#"><img src="/static/govt_schems.png" alt="Clickable img" style="height: 200px;"></a>
+  <div style="padding: 50px 50px 50px 50px;">
+    <a href="https://www.pmkisan.gov.in/" target="_blank" ><img src="/static/govt_schems.png" alt="Clickable img" style="height: 200px;"></a>
   </div>
-  <div>
-    <a href="#"><img src="/static/seeds_buy.png" alt="Clickable img" style="height: 200px; ;"></a>
+  <div style="padding: 50px 50px 50px 50px;">
+    <a href="https://www.iffcobazar.in/en/seeds/vegetable-seeds" target="_blank"><img src="/static/seeds_buy.png" alt="Clickable img" style="height: 200px; ;"></a>
   </div>
   </div>
   <div class="widgets" style="display: flex;" id="widgets_btn">
-    <a href="#"><img src="/static/agri_loan.png" alt="Clickable img" style="height: 200px;"></a>
-    <a href="#"><img src="/static/crop_insurance.png" alt="Clickable img" style="height: 200px;"></a>
-    <a href="#"><img src="/static/crop_selling.png" alt="Clickable img" style="height: 200px;"></a>
+    <div style="padding: 50px 50px 50px 50px;">
+    <a href="/show_loan" target="_blank" ><img src="/static/agri_loan.png" alt="Clickable img" style="height: 200px;"></a>
+  </div>
+  <div style="padding: 50px 50px 50px 50px;">
+    <a href="https://pmfby.gov.in/" target="_blank"><img src="/static/crop_insurance.png" alt="Clickable img" style="height: 200px;"></a>
+  </div>
+    <div style="padding: 50px 50px 50px 50px;">
+    <a href="/show_form" target="_blank"><img src="/static/crop_selling.png" alt="Clickable img" style="height: 200px; "></a>
+  </div>
   </div>
 </div>
   
@@ -416,49 +431,6 @@
       document.getElementById(elementId + "Value").innerText = newValue;
     }
   </script>
-  <div style=" margin-bottom: 481px;">
-  <form id="cropForm"  >
-    <div class="form-group">
-      <label for="sellerName">Seller Name:</label>
-      <input type="text" id="sellerName" name="sellerName" required>
-    </div>
-    <div class="form-group">
-      <label for="commodity">Commodity:</label>
-      <input type="text" id="commodity" name="commodity" required>
-    </div>
-    <div class="form-group">
-      <label for="quantity">Quantity:</label>
-      <input type="number" id="quantity" name="quantity" required>
-    </div>
-    <div class="form-group">
-      <label for="contactNumber">Contact Number:</label>
-      <input type="number" id="contactNumber" name="contactNumber" required>
-    </div>
-    <button type="submit">Submit</button>
-  </form>
-</div>
-<div>
-  <div style="margin-left: 100;"></div>
-<form id="buyerForm" style="background-color: aquamarine;">
-  <div class="form-group">
-    <label for="buyerName">Buyer Name:</label>
-    <input type="text" id="buyerName" name="buyerName" required>
-  </div>
-  <div class="form-group">
-    <label for="desiredCommodity">Desired Commodity:</label>
-    <input type="text" id="desiredCommodity" name="desiredCommodity" required>
-  </div>
-  <div class="form-group">
-    <label for="desiredQuantity">Desired Quantity:</label>
-    <input type="number" id="desiredQuantity" name="desiredQuantity" required>
-  </div>
-  <div class="form-group">
-    <label for="buyerContact">Contact Number:</label>
-    <input type="text" id="buyerContact" name="buyerContact" required>
-  </div>
-  <button type="submit">Submit</button>
-</form>
-</div>
   
   <!-- <div id="skipCont" class="wrapper"></div>
   <section class="wrapper body-wrapper " id="fontSize" role="main">
@@ -469,8 +441,6 @@
             <a id="main-content"></a>
                                       <h1 class="heading" tabindex="0">Kisan Suvidha</h1>
                         <div tabindex="0"> -->
-                                    
-                                    
                                     
 
 <!-- 
@@ -565,6 +535,6 @@
 </div>
   </footer>
   <!-- /footer-->
-  
+</div>  
 </body>
 </html>

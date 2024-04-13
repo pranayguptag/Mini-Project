@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmer Loan Application Form</title>
+    <style>
+        .farmer-form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .farmer-form label {
+            font-weight: bold;
+        }
+        .farmer-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        .farmer-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .farmer-form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        /* CSS for Loan Giver Form */
+        .loan-form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .loan-form label {
+            font-weight: bold;
+        }
+        .loan-form input[type="text"],
+        .loan-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        .loan-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .loan-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Farmer Loan Application Form</h2>
+    <div class="farmer-form">
+        <form action="/submit_farmer" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="amount">Loan Amount Needed:</label><br>
+            <input type="text" id="amount" name="amount"><br><br>
+            
+            <label for="contact">Contact Number:</label><br>
+            <input type="text" id="contact" name="contact"><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <h2>Loan Giver Form</h2>
+    <div class="loan-form">
+        <form action="/submit_loan_giver" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="phone">Your Phone Number:</label><br>
+            <input type="text" id="phone" name="phone"><br><br>
+            
+            <label for="amount">Loan Amount Offered:</label><br>
+            <input type="text" id="amount" name="amount"><br><br>
+            
+            <label for="interest">Interest Rate (%):</label><br>
+            <input type="text" id="interest" name="interest"><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+</body>
+</html>
+"""

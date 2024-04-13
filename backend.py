@@ -25,5 +25,13 @@ def predict():
     # Render the template with the prediction (optional, can redirect to success page)
     return render_template("index.html", prediction=prediction)
 
+@app.route('/show_form')
+def show_form():
+    return render_template('forms.html')
+
+@app.route('/show_loan')
+def show_loan():
+    return render_template('loan.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

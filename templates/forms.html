@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buyer Seller Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    
+    h2 {
+      margin-top: 1rem;
+    }
+    
+    form {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+    
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+    
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50; /* Green */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right; /* Aligns submit button to the right */
+    }
+  </style>
+</head>
+<body>
+  <h1>Buyer and Seller Information</h1>
+  
+  <h2>Buyer Form</h2>
+  <form action="process_buyer_info.php" method="post" required>
+    <label for="buyer_name">Name:</label>
+    <input type="text" id="buyer_name" name="buyer_name" required><br><br>
+    <label for="commodity">Commodity:</label>
+    <select id="commodity" name="commodity" required>
+      <option value="">Select Commodity</option>
+      <option value="rice">Rice</option>
+      <option value="papaya">Papaya</option>
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="pulses">Pulses (Variety available upon selection)</option>
+    </select><br><br>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required><br><br>
+    <label for="contact_number">Contact Number:</label>
+    <input type="number" id="contact_number" name="contact_number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">  <br><br>
+    <input type="submit" value="Submit Buyer Info">
+  </form>
+  
+  <h2>Seller Form</h2>
+  <form action="process_seller_info.php" method="post" required>
+    <label for="seller_name">Name:</label>
+    <input type="text" id="seller_name" name="seller_name" required><br><br>
+    <label for="commodity">Commodity:</label>
+    <select id="commodity" name="commodity" required>
+      <option value="">Select Commodity</option>
+      <option value="rice">Rice</option>
+      <option value="papaya">Papaya</option>
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="pulses">Pulses (Variety available upon selection)</option>
+    </select><br><br>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required><br>
+    <label for="contact_number">Contact Number:</label>
+    <input type="number" id="contact_number" name="contact_number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">  <br><br>
+    <input type="submit" value="Submit Buyer Info">
+  </form>
