@@ -33,6 +33,9 @@ This project was made possible by the collaborative efforts of the following con
 - [Abhishek Kumar](https://github.com/ABHISHEKKUMAR72)
 - [Mayank Pant](https://github.com/obiwan04kanobi)
 
+## Website
+![kisan-suvidha website](/static/website_preview.png)
+
 ## Disclaimer
 This website is developed for educational and informational purposes only. While efforts have been made to provide accurate and up-to-date information, we do not guarantee the correctness, completeness, or reliability of any information provided. Users are encouraged to verify information obtained from this website with other sources and consult professionals for specific advice or assistance related to agriculture and farming practices.
 
