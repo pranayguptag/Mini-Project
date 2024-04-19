@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     # Display the form on GET request
     return render_template("index.html")
-
+"""
 @app.route("/predict", methods=["POST"])  # Route for handling prediction request
 def predict():
     # Get user input on POST request
@@ -24,14 +24,67 @@ def predict():
 
     # Render the template with the prediction (optional, can redirect to success page)
     return render_template("index.html", prediction=prediction)
+"""
+
+@app.route("/predict", methods=["POST"])
+def predict():
+    # Sample location data (can be replaced with an actual data source)
+    location_data = {
+        "Delhi, India": {
+            "nitrogen": 120.5,
+            "phosphorus": 50.2,
+            "potassium": 180.1,
+            "temperature": 28.7,
+            "humidity": 65.4,
+            "ph": 7.2,
+            "rainfall": 0.0  # Assuming no recent rainfall for this example
+        },
+        "Bangalore, India": {
+            "nitrogen": 105.3,
+            "phosphorus": 42.1,
+            "potassium": 168.9,
+            "temperature": 25.8,
+            "humidity": 78.2,
+            "ph": 6.8,
+            "rainfall": 3.1  # Assuming some recent rainfall
+        },
+        # Add more locations as needed...
+    }
+
+    # Extract user-selected location from the request (if provided)
+    selected_location = request.form.get("location")
+
+    # Use default location data if none is selected
+    #location_data_to_use = location_data.get("Bangalore, India")  # Default location
+    if selected_location and selected_location in location_data:
+        location_data_to_use = location_data[selected_location]
+
+    # Extract crop data from the location data
+    nitrogen = location_data_to_use["nitrogen"]
+    phosphorus = location_data_to_use["phosphorus"]
+    potassium = location_data_to_use["potassium"]
+    temperature = location_data_to_use.get("temperature")
+    humidity = location_data_to_use.get("humidity")
+    ph = location_data_to_use.get("ph")
+    rainfall = location_data_to_use.get("rainfall")
+
+    # Call your machine learning model
+    prediction = predict_crop(nitrogen, phosphorus, potassium, temperature, humidity, ph, rainfall)
+
+    # Render the template with the prediction (optional, can redirect to success page)
+    return render_template("search.html", prediction=prediction)
+
+@app.route('/show_loan')
+def show_loan():
+    return render_template('loan.html')
 
 @app.route('/show_form')
 def show_form():
     return render_template('forms.html')
 
-@app.route('/show_loan')
-def show_loan():
-    return render_template('loan.html')
+@app.route('/showpredict')
+def show_search():
+    return render_template('search.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
