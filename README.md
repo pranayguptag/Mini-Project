@@ -40,7 +40,7 @@ This project was made possible by the collaborative efforts of the following con
 This website is developed for educational and informational purposes only. While efforts have been made to provide accurate and up-to-date information, we do not guarantee the correctness, completeness, or reliability of any information provided. Users are encouraged to verify information obtained from this website with other sources and consult professionals for specific advice or assistance related to agriculture and farming practices.
 
 ## Feedback and Support
-We welcome your feedback and suggestions to improve this platform and make it more beneficial for Indian farmers. For any inquiries or assistance, please contact us at [mayank04pant@gmail.com](mailto:mayank04pant@gmail.com) [hariomtiwari20004@gmail.com](hariomtiwari20004@gmail.com).
+We welcome your feedback and suggestions to improve this platform and make it more beneficial for Indian farmers. For any inquiries or assistance, please contact us at [mayank04pant@gmail.com](mailto:mayank04pant@gmail.com), [hariomtiwari20004@gmail.com](mailto:hariomtiwari20004@gmail.com).
 
 Thank you for visiting kisan-suvidha!
 
