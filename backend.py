@@ -7,9 +7,9 @@ app = Flask(__name__)
 def index():
     # Display the form on GET request
     return render_template("index.html")
-"""
-@app.route("/predict", methods=["POST"])  # Route for handling prediction request
-def predict():
+
+@app.route("/predict_scrollbar", methods=["POST"])  # Route for handling prediction request
+def scrollbar():
     # Get user input on POST request
     nitrogen = float(request.form["nitrogen"])
     phosphorus = float(request.form["phosphorus"])
@@ -23,11 +23,11 @@ def predict():
     prediction = predict_crop(nitrogen, phosphorus, potassium, temperature, humidity, ph, rainfall)
 
     # Render the template with the prediction (optional, can redirect to success page)
-    return render_template("index.html", prediction=prediction)
-"""
+    return render_template("search.html", scrollbar_prediction=prediction)
 
-@app.route("/predict", methods=["POST"])
-def predict():
+
+@app.route("/predict_dropdown", methods=["POST"])
+def drop_down():
     # Sample location data (can be replaced with an actual data source)
     location_data = {
         "Delhi, India": {
@@ -72,7 +72,7 @@ def predict():
     prediction = predict_crop(nitrogen, phosphorus, potassium, temperature, humidity, ph, rainfall)
 
     # Render the template with the prediction (optional, can redirect to success page)
-    return render_template("search.html", prediction=prediction)
+    return render_template("search.html", dropdown_prediction=prediction)
 
 @app.route('/show_loan')
 def show_loan():
