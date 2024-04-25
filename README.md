@@ -42,7 +42,7 @@ This website is developed for educational and informational purposes only. While
 ## Feedback and Support
 We welcome your feedback and suggestions to improve this platform and make it more beneficial for Indian farmers. For any inquiries or assistance, please contact us at [mayank04pant@gmail.com](mailto:mayank04pant@gmail.com), [hariomtiwari20004@gmail.com](mailto:hariomtiwari20004@gmail.com).
 
-Thank you for visiting kisan-suvidha!
+Thank you for visiting kisan seva!
 
 ---
 Developed by Code Harvesters during Hack-X 2.0 conducted at NIET, Greater Noida on 13 April 2024.
