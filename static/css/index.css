@@ -50,3 +50,26 @@ button:hover {
   font-weight: bold;
   /* Make the prediction text stand out */
 }
+
+/*Nav Bar CSS*/
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.dropdown-menu {
+  background-color: #343a40;
+}
+.dropdown-item {
+  color: white; /* White text color for dropdown items */
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #495057;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+}
