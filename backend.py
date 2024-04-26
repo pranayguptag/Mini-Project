@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 from crop_ml import predict_crop  # Assuming crop_ml.py has a predict function
 
 app = Flask(__name__)
@@ -85,6 +85,11 @@ def show_form():
 @app.route('/showpredict')
 def show_search():
     return render_template('search.html')
+
+@app.route('/ads.txt')
+def ads_txt():
+    # Adjust the path if your ads.txt is located elsewhere
+    return send_from_directory(app.static_folder, 'ads.txt')
 
 if __name__ == "__main__":
     app.run(debug=True)
