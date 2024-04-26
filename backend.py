@@ -91,5 +91,10 @@ def ads_txt():
     # Adjust the path if your ads.txt is located elsewhere
     return send_from_directory(app.static_folder, 'ads.txt')
 
+@app.route('/kisan_seva_logo')
+def website_logo():
+    # Adjust the path if your ads.txt is located elsewhere
+    return send_from_directory(app.static_folder, 'kisan_seva_logo.png')
+
 if __name__ == "__main__":
     app.run(debug=True)
