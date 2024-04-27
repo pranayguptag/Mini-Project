@@ -1,0 +1,72 @@
+.banner {
+    background-image: url('/static/agri_loan/loan_banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Custom Ad Banner Styles */
+.ad-banner {
+    height: 120px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Custom Product Card Styles */
+.card {
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/*Footer Section*/
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    /* Default large padding */
+    font-size: x-small;
+  }
+  
+  .footer a {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .footer a:hover {
+    color: #bbbbbb;
+    text-decoration: none;
+  }
+  
+  .footer-column {
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .site-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensures the container is at least the height of the viewport */
+  }
+  
+  .content-wrap {
+    flex: 1;
+    /* Takes up all available space pushing the footer down */
+    display: flex;
+    flex-direction: column;
+  }

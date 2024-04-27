@@ -1,106 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Farmer Loan Application Form</title>
-    <style>
-        .farmer-form {
-            width: 50%;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        .farmer-form label {
-            font-weight: bold;
-        }
-        .farmer-form input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 3px;
-            border: 1px solid #ccc;
-        }
-        .farmer-form input[type="submit"] {
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-        .farmer-form input[type="submit"]:hover {
-            background-color: #218838;
-        }
-        /* CSS for Loan Giver Form */
-        .loan-form {
-            width: 50%;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        .loan-form label {
-            font-weight: bold;
-        }
-        .loan-form input[type="text"],
-        .loan-form input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 3px;
-            border: 1px solid #ccc;
-        }
-        .loan-form input[type="submit"] {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-        .loan-form input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Loans</title>
+    <meta name="google-adsense-account" content="ca-pub-6961433030971128">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Google Adsense-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6961433030971128"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/loan.css">
 </head>
+
 <body>
-    <h2>Farmer Loan Application Form</h2>
-    <div class="farmer-form">
-        <form action="/submit_farmer" method="post">
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            
-            <label for="amount">Loan Amount Needed:</label><br>
-            <input type="text" id="amount" name="amount"><br><br>
-            
-            <label for="contact">Contact Number:</label><br>
-            <input type="text" id="contact" name="contact"><br><br>
-            
-            <input type="submit" value="Submit">
-        </form>
+    <div class="site-container">
+        <header>
+            <div class="accessibility_top_nav">
+                <div class="wrapper">
+                    <div class="region region-header-top">
+                        <div id="block-cmf-content-header-region-block" class="block block-cmf-content first last odd">
+                            <div class="wrapper common-wrapper" style="background-color: lightgrey;">
+                                <div class="container common-container">
+                                    <div class="common-left clearfix" style="height: 100px;">
+                                        <!-- Updated the ul style to include centering properties -->
+                                        <ul
+                                            style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 0; padding: 0;">
+                                            <li style="list-style: none;">
+                                                <!-- Added a list item element for proper HTML structure -->
+                                                <img src="/static/index/kisan_seva_logo.png" alt="kisan seva logo"
+                                                    style="height: 100px; border-radius: 100px;">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">AgriLoans</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Products</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="content-wrap">
+            <div class="banner">
+                <h1>Welcome to Agri Loans</h1>
+            </div>
+
+            <div class="container mt-5">
+                <!-- Ad Space -->
+                <div class="ad-banner mb-4">
+                    <!--Google Ads-->
+                </div>
+                <h2 class="mb-3">Our Loan Products</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="/static/agri_loan/crop_loan.png" alt="Crop Loan">
+                            <div class="card-body">
+                                <h5 class="card-title">Crop Loan</h5>
+                                <p class="card-text">Designed to meet all types of farming needs. Flexible repayment
+                                    aligned
+                                    with harvest seasons.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="/static/agri_loan/equipment.png" alt="Equipment Loan">
+                            <div class="card-body">
+                                <h5 class="card-title">Equipment Loan</h5>
+                                <p class="card-text">Finance the purchase of new farming equipment to increase your
+                                    farm's
+                                    efficiency.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="/static/agri_loan/land_loan.png" alt="Land Purchase Loan">
+                            <div class="card-body">
+                                <h5 class="card-title">Land Purchase Loan</h5>
+                                <p class="card-text">Helping you expand your agricultural endeavors by facilitating the
+                                    purchase
+                                    of more land.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-4">
+                <!-- Ad Space -->
+                <div class="ad-banner mb-4">
+                    <!--Google Ads-->
+                </div>
+            </div>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+        </main>
+
+        <!-- footer-->
+        <footer class="footer mt-auto">
+            <div class="container text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-3 footer-column">
+                        <h5>Services</h5>
+                        <a href="#">Website Policies | </a>
+                        <a href="#">Help | </a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="col-md-3 footer-column">
+                        <h5>About</h5>
+                        <a href="#">Feedback | </a>
+                        <a href="#">Web Information Manager</a>
+                    </div>
+                    <div class="col-md-3 footer-column">
+                        <h5>Legal</h5>
+                        <a href="#">Disclaimer | </a>
+                        <a href="#">Term & Conditions | </a>
+                        <a href="#">Committees</a>
+                    </div>
+                    <div class="col-md-3 footer-column">
+                        <h5>Connect</h5>
+                        <div class="social-icons">
+                            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"
+                                    alt="Facebook" style="width: 24px;"></a>
+                            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter"
+                                    style="width: 24px;"></a>
+                            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+                                    alt="Instagram" style="width: 24px;"></a>
+                            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube.png" alt="Youtube"
+                                    style="width: 24px;"></a>
+                        </div>
+                        <a href="#">Newsletter</a>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p>Copyright © Kisan Seva. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
     </div>
-    <h2>Loan Giver Form</h2>
-    <div class="loan-form">
-        <form action="/submit_loan_giver" method="post">
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            
-            <label for="phone">Your Phone Number:</label><br>
-            <input type="text" id="phone" name="phone"><br><br>
-            
-            <label for="amount">Loan Amount Offered:</label><br>
-            <input type="text" id="amount" name="amount"><br><br>
-            
-            <label for="interest">Interest Rate (%):</label><br>
-            <input type="text" id="interest" name="interest"><br><br>
-            
-            <input type="submit" value="Submit">
-        </form>
 </body>
+
 </html>
-"""

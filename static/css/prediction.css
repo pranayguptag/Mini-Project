@@ -1,0 +1,94 @@
+.prediction-result {
+  font-size: medium;
+  /* Larger font size for better readability */
+  background-color: white;
+  /* White background for the text */
+  padding: 10px 20px;
+  /* Padding around the text */
+  border: 1px solid #ccc;
+  /* Light grey border */
+  border-radius: 15px;
+  /* Rounded corners for aesthetics */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow to make the box pop out */
+  display: inline-block;
+  /* Makes the span display as a block element */
+  margin-top: 5px;
+  /* Space above the span */
+  text-align: center;
+  /* Center align text */
+}
+
+.prediction-result {
+  font-size: medium;
+  background-color: white;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 5px;
+  text-align: center;
+}
+
+body {
+  background-image: url("/static/prediction/prediction_background.png");
+  background-size: cover;
+  /* Cover entire screen */
+  background-position: center;
+  /* Center background */
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form-label,
+.form-range {
+  font-size: larger;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  /* Default large padding */
+  font-size: x-small;
+}
+
+.footer a {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer a:hover {
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+.footer-column {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}

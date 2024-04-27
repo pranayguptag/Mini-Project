@@ -23,7 +23,7 @@ def scrollbar():
     prediction = predict_crop(nitrogen, phosphorus, potassium, temperature, humidity, ph, rainfall)
 
     # Render the template with the prediction (optional, can redirect to success page)
-    return render_template("search.html", scrollbar_prediction=prediction)
+    return render_template("prediction.html", scrollbar_prediction=prediction)
 
 
 @app.route("/predict_dropdown", methods=["POST"])
@@ -72,19 +72,19 @@ def drop_down():
     prediction = predict_crop(nitrogen, phosphorus, potassium, temperature, humidity, ph, rainfall)
 
     # Render the template with the prediction (optional, can redirect to success page)
-    return render_template("search.html", dropdown_prediction=prediction)
+    return render_template("prediction.html", dropdown_prediction=prediction)
 
-@app.route('/show_loan')
-def show_loan():
+@app.route('/loan')
+def loan():
     return render_template('loan.html')
 
 @app.route('/show_form')
 def show_form():
     return render_template('forms.html')
 
-@app.route('/showpredict')
-def show_search():
-    return render_template('search.html')
+@app.route('/prediction')
+def search():
+    return render_template('prediction.html')
 
 @app.route('/ads.txt')
 def ads_txt():
@@ -95,6 +95,10 @@ def ads_txt():
 def website_logo():
     # Adjust the path if your ads.txt is located elsewhere
     return send_from_directory(app.static_folder, 'kisan_seva_logo.png')
+
+@app.route('/marketplace')
+def marketplace():
+    return render_template('marketplace.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

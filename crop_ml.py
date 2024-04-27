@@ -121,6 +121,6 @@ score = cross_val_score(RF,features,target,cv=5)
 
 
 def predict_crop(N, P, K, temperature, humidity, ph, rainfall):
-    data = np.array([[N, P, K, temperature,humidity, ph, rainfall]])
+    data = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
     prediction = RF.predict(data)
-    return str(prediction)
+    return str(prediction[0]).title()
