@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, send_from_directory
 from crop_ml import predict_crop  # Assuming crop_ml.py has a predict function
+import os
 
 app = Flask(__name__)
 
@@ -93,8 +94,9 @@ def ads_txt():
 
 @app.route('/kisan_seva_logo')
 def website_logo():
-    # Adjust the path if your ads.txt is located elsewhere
-    return send_from_directory(app.static_folder, 'kisan_seva_logo.png')
+    # Providing the correct path to the 'index' folder inside the 'static' folder
+    directory_path = os.path.join(app.static_folder, 'index')
+    return send_from_directory(directory_path, 'kisan_seva_logo.png')
 
 @app.route('/marketplace')
 def marketplace():

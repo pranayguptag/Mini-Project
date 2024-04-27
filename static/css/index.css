@@ -1,14 +1,29 @@
 html,
 body {
-  height: 100%;
-  /* Ensures that the html and body tags take up at least the full height of the viewport */
-  margin: 0;
-  padding: 0;
+    height: 100%;
+    /* Ensures that the html and body tags take up at least the full height of the viewport */
+    margin: 0;
+    padding: 0;
 }
 
 /* NavBar CSS */
 .navbar {
-  color: white;
+    color: white;
+}
+
+/* Custom CSS for right-aligned dropdowns */
+.dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-top: -1px;
+    /* Align the submenu with the parent menu item */
+    position: absolute;
+    /* Ensure the menu is positioned relative to its parent */
+}
+
+/* Hover effect to show the submenu */
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
 }
 
 /* Custom Banner Styles */
