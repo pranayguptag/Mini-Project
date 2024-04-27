@@ -96,7 +96,7 @@ def ads_txt():
 def website_logo():
     # Providing the correct path to the 'index' folder inside the 'static' folder
     directory_path = os.path.join(app.static_folder, 'index')
-    return send_from_directory(directory_path, 'kisan_seva_logo.png')
+    return send_from_directory(directory_path, 'kisan_seva_logo_full.png')
 
 @app.route('/marketplace')
 def marketplace():
