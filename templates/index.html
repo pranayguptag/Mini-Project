@@ -114,9 +114,18 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/marketplace" target="_blank">Shop</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="/prediction" target="_blank">Crop Prediction</a></li>
+                  <li><a class="dropdown-item" href="/marketplace" target="_blank">Shop</a></li>
+                  <li><a class="dropdown-item" href="/loan" target="_blank">Agri Loan</a></li>
               </li>
+            </ul>
+            </li>
             </ul>
             <form class="d-flex ms-auto">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -254,6 +263,31 @@
           </div>
         </div>
 
+        <div class="row">
+          <!-- Product Card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/static/index/seeds_buy.png" class="card-img-top" alt="Fertilizer">
+              <div class="card-body">
+                <h5 class="card-title">Buy Seeds</h5>
+                <p class="card-text"> </p>
+                <a href="https://www.iffcobazar.in/en/seeds/" target="_blank" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/static/index/marketplace.png" class="card-img-top" alt="Pesticide">
+              <div class="card-body">
+                <h5 class="card-title">Shop</h5>
+                <p class="card-text"> </p>
+                <a href="/marketplace" target="_blank" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
 
