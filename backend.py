@@ -47,9 +47,81 @@ def drop_down():
             "temperature": 25.8,
             "humidity": 78.2,
             "ph": 6.8,
-            "rainfall": 3.1  # Assuming some recent rainfall
+            "rainfall": 80  # Assuming some recent rainfall
         },
         # Add more locations as needed...
+        "Mumbai, India" : { 
+            "nitrogen": 26,
+            "phosphorus": 27,
+            "potassium": 10,
+            "temperature": 28.06,
+            "humidity": 92.9,
+            "ph": 6.07,
+            "rainfall": 114.13  # Assuming no recent rainfall for this example
+        },
+        "Kolkata, India" : { 
+            "nitrogen": 90,
+            "phosphorus": 42,
+            "potassium": 43,
+            "temperature": 20.87,
+            "humidity": 82.2,
+            "ph": 6.5,
+            "rainfall": 150.93  # Assuming no recent rainfall for this example
+        },
+        "Chennai, India" : { 
+            "nitrogen": 99,
+            "phosphorus": 92,
+            "potassium": 47,
+            "temperature": 28.12,
+            "humidity": 77.48,
+            "ph": 6.3,
+            "rainfall": 103.5  # Assuming no recent rainfall for this example
+        },
+        "Hyderabad, India" : { 
+            "nitrogen": 55,
+            "phosphorus": 35,
+            "potassium": 50,
+            "temperature": 30,
+            "humidity": 70,
+            "ph": 7,
+            "rainfall": 70  # Assuming no recent rainfall for this example
+        },
+        "Pune, India" : { 
+            "nitrogen": 50,
+            "phosphorus": 30,
+            "potassium": 45,
+            "temperature": 26,
+            "humidity": 65,
+            "ph": 6.8,
+            "rainfall": 80  # Assuming no recent rainfall for this example
+        },
+        "Ahmedabad, India" : { 
+            "nitrogen": 127,
+            "phosphorus": 37,
+            "potassium": 18,
+            "temperature": 24.8,
+            "humidity": 76.3,
+            "ph": 7.0,
+            "rainfall": 91.9  # Assuming no recent rainfall for this example
+        },
+        "Jaipur, India" : { 
+            "nitrogen": 13,
+            "phosphorus": 67,
+            "potassium": 18,
+            "temperature": 29.3,
+            "humidity": 45.9,
+            "ph": 6.4,
+            "rainfall": 165.4  # Assuming no recent rainfall for this example
+        },
+        "Lucknow, India" : { 
+            "nitrogen": 55,
+            "phosphorus": 30,
+            "potassium": 55,
+            "temperature": 23,
+            "humidity": 65,
+            "ph": 8,
+            "rainfall": 110  # Assuming no recent rainfall for this example
+        },
     }
 
     # Extract user-selected location from the request (if provided)

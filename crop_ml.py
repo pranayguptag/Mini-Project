@@ -25,7 +25,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
 
-df = pd.read_csv(r"/Users/mayankpant/Documents/Code/GitHub Projects/Hack-X/crop_recommendation.csv")
+df = pd.read_csv(r"C:\Users\Prana\Downloads\Gitclone\Hack-X\crop_recommendation.csv")
 
 
 features = df[['N', 'P','K','temperature', 'humidity', 'ph', 'rainfall']]
