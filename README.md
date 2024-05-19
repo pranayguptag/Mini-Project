@@ -26,9 +26,6 @@ Welcome to Kisan Seva, a platform dedicated to supporting Indian farmers with va
 ## Contributors
 This project was made possible by the collaborative efforts of the following contributors:
 
-- [Shivam Kumar Mishra](https://github.com/shivamishra-02)
-- [Hariom Tiwari](https://github.com/Hariomtiwari2)
-- [Shanvi Prajapati](https://github.com/shanviprajapati)
 - [Pranay Gupta](https://github.com/pranayguptag)
 - [Abhishek Kumar](https://github.com/ABHISHEKKUMAR72)
 - [Mayank Pant](https://github.com/obiwan04kanobi)
